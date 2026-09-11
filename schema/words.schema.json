@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/annenpolka/mochitako/schema/words.schema.json",
+  "title": "mochitako vocabulary",
+  "description": "A curated machine-readable vocabulary of cute, slightly strange Japanese-inspired words for composing names.",
+  "type": "object",
+  "required": ["version", "words"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": { "type": "string" },
+    "version": { "type": "integer", "minimum": 1 },
+    "words": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/word" },
+      "uniqueItems": true
+    }
+  },
+  "$defs": {
+    "word": {
+      "type": "object",
+      "required": ["value", "reading", "kind", "vibes", "roles"],
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "type": "string",
+          "pattern": "^[a-z]+$",
+          "description": "Lowercase ASCII romaji form, safe for slugs and identifiers."
+        },
+        "reading": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Japanese orthography (hiragana for native words, katakana for loanwords)."
+        },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "texture",
+            "mood",
+            "motion",
+            "sound",
+            "nature",
+            "food",
+            "creature",
+            "object",
+            "concept",
+            "trait"
+          ],
+          "description": "Lexical category — what the word denotes."
+        },
+        "vibes": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "enum": [
+              "sleepy",
+              "fluffy",
+              "happy",
+              "nature",
+              "weather",
+              "motion",
+              "sweet",
+              "mysterious",
+              "tiny",
+              "weird"
+            ]
+          },
+          "description": "Mood tags used for filtering."
+        },
+        "weirdness": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "How out-of-place the word feels (0 = ordinary, 1 = absurd)."
+        },
+        "roles": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": ["prefix", "suffix"]
+          },
+          "description": "Which slug slots the word can occupy."
+        }
+      }
+    }
+  }
+}

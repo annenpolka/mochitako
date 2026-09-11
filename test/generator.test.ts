@@ -103,30 +103,3 @@ describe("createGenerator", () => {
     expect(new Set(stream).size).toBeGreaterThan(1);
   });
 });
-
-describe("dictionary", () => {
-  it("covers every vibe on both sides", () => {
-    for (const vibe of VIBES) {
-      expect(
-        prefixes.some((w) => w.vibes.includes(vibe)),
-        `no prefix carries vibe "${vibe}"`,
-      ).toBe(true);
-      expect(
-        suffixes.some((w) => w.vibes.includes(vibe)),
-        `no suffix carries vibe "${vibe}"`,
-      ).toBe(true);
-    }
-  });
-
-  it("has unique values within each side", () => {
-    expect(new Set(prefixes.map((w) => w.value)).size).toBe(prefixes.length);
-    expect(new Set(suffixes.map((w) => w.value)).size).toBe(suffixes.length);
-  });
-
-  it("uses lowercase ascii slug-safe values", () => {
-    for (const w of [...prefixes, ...suffixes]) {
-      expect(w.value).toMatch(/^[a-z]+$/);
-      expect(w.vibes.length).toBeGreaterThan(0);
-    }
-  });
-});

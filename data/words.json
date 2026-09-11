@@ -1,0 +1,2275 @@
+{
+  "$schema": "../schema/words.schema.json",
+  "version": 1,
+  "words": [
+    {
+      "value": "fuwafuwa",
+      "reading": "ふわふわ",
+      "kind": "texture",
+      "vibes": ["fluffy"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "mofumofu",
+      "reading": "もふもふ",
+      "kind": "texture",
+      "vibes": ["fluffy"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "mokomoko",
+      "reading": "もこもこ",
+      "kind": "texture",
+      "vibes": ["fluffy"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "funwari",
+      "reading": "ふんわり",
+      "kind": "texture",
+      "vibes": ["fluffy", "motion"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "marumaru",
+      "reading": "まるまる",
+      "kind": "texture",
+      "vibes": ["fluffy", "tiny"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "korokoro",
+      "reading": "ころころ",
+      "kind": "texture",
+      "vibes": ["fluffy", "motion"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "purupuru",
+      "reading": "ぷるぷる",
+      "kind": "texture",
+      "vibes": ["fluffy", "weird"],
+      "weirdness": 0.4,
+      "roles": ["prefix"]
+    },
+    {
+      "value": "punipuni",
+      "reading": "ぷにぷに",
+      "kind": "texture",
+      "vibes": ["fluffy", "weird"],
+      "weirdness": 0.5,
+      "roles": ["prefix"]
+    },
+    {
+      "value": "mochimochi",
+      "reading": "もちもち",
+      "kind": "texture",
+      "vibes": ["fluffy", "sweet"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "sarasara",
+      "reading": "さらさら",
+      "kind": "texture",
+      "vibes": ["fluffy"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "tsurutsuru",
+      "reading": "つるつる",
+      "kind": "texture",
+      "vibes": ["fluffy", "weird"],
+      "weirdness": 0.4,
+      "roles": ["prefix"]
+    },
+    {
+      "value": "hokahoka",
+      "reading": "ほかほか",
+      "kind": "texture",
+      "vibes": ["fluffy", "sleepy"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "funyafunya",
+      "reading": "ふにゃふにゃ",
+      "kind": "texture",
+      "vibes": ["fluffy", "weird"],
+      "weirdness": 0.6,
+      "roles": ["prefix"]
+    },
+    {
+      "value": "fuwari",
+      "reading": "ふわり",
+      "kind": "texture",
+      "vibes": ["fluffy", "nature"],
+      "roles": ["prefix"]
+    },
+
+    {
+      "value": "nemunemu",
+      "reading": "ねむねむ",
+      "kind": "mood",
+      "vibes": ["sleepy"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "utouto",
+      "reading": "うとうと",
+      "kind": "mood",
+      "vibes": ["sleepy", "motion"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "suyasuya",
+      "reading": "すやすや",
+      "kind": "mood",
+      "vibes": ["sleepy"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "oyasumi",
+      "reading": "おやすみ",
+      "kind": "mood",
+      "vibes": ["sleepy"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "hirune",
+      "reading": "ひるね",
+      "kind": "mood",
+      "vibes": ["sleepy"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "nonbiri",
+      "reading": "のんびり",
+      "kind": "mood",
+      "vibes": ["sleepy"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "yukkuri",
+      "reading": "ゆっくり",
+      "kind": "mood",
+      "vibes": ["sleepy", "motion"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "honobono",
+      "reading": "ほのぼの",
+      "kind": "mood",
+      "vibes": ["sleepy", "happy"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "bonyari",
+      "reading": "ぼんやり",
+      "kind": "mood",
+      "vibes": ["sleepy", "mysterious"],
+      "weirdness": 0.3,
+      "roles": ["prefix"]
+    },
+    {
+      "value": "mattari",
+      "reading": "まったり",
+      "kind": "mood",
+      "vibes": ["sleepy"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "gorogoro",
+      "reading": "ごろごろ",
+      "kind": "mood",
+      "vibes": ["sleepy", "motion"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "nukunuku",
+      "reading": "ぬくぬく",
+      "kind": "mood",
+      "vibes": ["sleepy", "fluffy"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "munyamunya",
+      "reading": "むにゃむにゃ",
+      "kind": "sound",
+      "vibes": ["sleepy", "weird"],
+      "weirdness": 0.5,
+      "roles": ["prefix"]
+    },
+    {
+      "value": "guuguu",
+      "reading": "ぐうぐう",
+      "kind": "sound",
+      "vibes": ["sleepy"],
+      "weirdness": 0.3,
+      "roles": ["prefix"]
+    },
+
+    {
+      "value": "nikoniko",
+      "reading": "にこにこ",
+      "kind": "mood",
+      "vibes": ["happy"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "nikkori",
+      "reading": "にっこり",
+      "kind": "mood",
+      "vibes": ["happy"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "wakuwaku",
+      "reading": "わくわく",
+      "kind": "mood",
+      "vibes": ["happy"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "ukiuki",
+      "reading": "うきうき",
+      "kind": "mood",
+      "vibes": ["happy"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "runrun",
+      "reading": "るんるん",
+      "kind": "mood",
+      "vibes": ["happy", "motion"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "gokigen",
+      "reading": "ごきげん",
+      "kind": "mood",
+      "vibes": ["happy"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "piyopiyo",
+      "reading": "ぴよぴよ",
+      "kind": "sound",
+      "vibes": ["happy", "tiny"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "kirakira",
+      "reading": "きらきら",
+      "kind": "texture",
+      "vibes": ["happy", "nature"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "pikapika",
+      "reading": "ぴかぴか",
+      "kind": "texture",
+      "vibes": ["happy"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "pukapuka",
+      "reading": "ぷかぷか",
+      "kind": "motion",
+      "vibes": ["happy", "motion"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "pyonpyon",
+      "reading": "ぴょんぴょん",
+      "kind": "motion",
+      "vibes": ["happy", "motion"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "tekuteku",
+      "reading": "てくてく",
+      "kind": "motion",
+      "vibes": ["happy", "motion"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "dokidoki",
+      "reading": "どきどき",
+      "kind": "mood",
+      "vibes": ["happy", "mysterious"],
+      "roles": ["prefix"]
+    },
+
+    {
+      "value": "hidamari",
+      "reading": "ひだまり",
+      "kind": "nature",
+      "vibes": ["nature", "sleepy"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "komorebi",
+      "reading": "こもれび",
+      "kind": "nature",
+      "vibes": ["nature"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "asatsuyu",
+      "reading": "あさつゆ",
+      "kind": "nature",
+      "vibes": ["nature"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "watagumo",
+      "reading": "わたぐも",
+      "kind": "nature",
+      "vibes": ["nature", "weather"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "ukigumo",
+      "reading": "うきぐも",
+      "kind": "nature",
+      "vibes": ["nature", "weather"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "shinrin",
+      "reading": "しんりん",
+      "kind": "nature",
+      "vibes": ["nature"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "seseragi",
+      "reading": "せせらぎ",
+      "kind": "nature",
+      "vibes": ["nature"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "hanabatake",
+      "reading": "はなばたけ",
+      "kind": "nature",
+      "vibes": ["nature", "happy"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "wakaba",
+      "reading": "わかば",
+      "kind": "nature",
+      "vibes": ["nature"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "aoba",
+      "reading": "あおば",
+      "kind": "nature",
+      "vibes": ["nature"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "shizuku",
+      "reading": "しずく",
+      "kind": "nature",
+      "vibes": ["nature", "tiny"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "minamo",
+      "reading": "みなも",
+      "kind": "nature",
+      "vibes": ["nature", "mysterious"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "hanabira",
+      "reading": "はなびら",
+      "kind": "nature",
+      "vibes": ["nature", "tiny"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "kusabana",
+      "reading": "くさばな",
+      "kind": "nature",
+      "vibes": ["nature"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "tanima",
+      "reading": "たにま",
+      "kind": "nature",
+      "vibes": ["nature", "mysterious"],
+      "weirdness": 0.3,
+      "roles": ["prefix"]
+    },
+
+    {
+      "value": "soyokaze",
+      "reading": "そよかぜ",
+      "kind": "nature",
+      "vibes": ["weather", "nature"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "harukaze",
+      "reading": "はるかぜ",
+      "kind": "nature",
+      "vibes": ["weather", "nature"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "natsukaze",
+      "reading": "なつかぜ",
+      "kind": "nature",
+      "vibes": ["weather"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "akikaze",
+      "reading": "あきかぜ",
+      "kind": "nature",
+      "vibes": ["weather"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "kogarashi",
+      "reading": "こがらし",
+      "kind": "nature",
+      "vibes": ["weather"],
+      "weirdness": 0.3,
+      "roles": ["prefix"]
+    },
+    {
+      "value": "amefuri",
+      "reading": "あめふり",
+      "kind": "nature",
+      "vibes": ["weather"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "kosame",
+      "reading": "こさめ",
+      "kind": "nature",
+      "vibes": ["weather"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "shigure",
+      "reading": "しぐれ",
+      "kind": "nature",
+      "vibes": ["weather", "mysterious"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "kirimoya",
+      "reading": "きりもや",
+      "kind": "nature",
+      "vibes": ["weather", "mysterious"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "konayuki",
+      "reading": "こなゆき",
+      "kind": "nature",
+      "vibes": ["weather"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "hatsuyuki",
+      "reading": "はつゆき",
+      "kind": "nature",
+      "vibes": ["weather", "nature"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "harugasumi",
+      "reading": "はるがすみ",
+      "kind": "nature",
+      "vibes": ["weather", "nature"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "yuudachi",
+      "reading": "ゆうだち",
+      "kind": "nature",
+      "vibes": ["weather"],
+      "weirdness": 0.3,
+      "roles": ["prefix"]
+    },
+    {
+      "value": "amahare",
+      "reading": "あまはれ",
+      "kind": "nature",
+      "vibes": ["weather", "happy"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "niji",
+      "reading": "にじ",
+      "kind": "nature",
+      "vibes": ["weather", "happy"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "mizutamari",
+      "reading": "みずたまり",
+      "kind": "nature",
+      "vibes": ["weather", "nature"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "yuzora",
+      "reading": "ゆぞら",
+      "kind": "nature",
+      "vibes": ["weather", "nature"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "yuuyake",
+      "reading": "ゆうやけ",
+      "kind": "nature",
+      "vibes": ["weather", "nature"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "tasogare",
+      "reading": "たそがれ",
+      "kind": "nature",
+      "vibes": ["weather", "mysterious"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "akatsuki",
+      "reading": "あかつき",
+      "kind": "nature",
+      "vibes": ["weather", "mysterious"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "yozora",
+      "reading": "よぞら",
+      "kind": "nature",
+      "vibes": ["nature", "mysterious"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "hoshizora",
+      "reading": "ほしぞら",
+      "kind": "nature",
+      "vibes": ["nature", "mysterious"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "tsukiyo",
+      "reading": "つきよ",
+      "kind": "nature",
+      "vibes": ["nature", "mysterious"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "hoshikage",
+      "reading": "ほしかげ",
+      "kind": "nature",
+      "vibes": ["nature", "mysterious"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "tsukikage",
+      "reading": "つきかげ",
+      "kind": "nature",
+      "vibes": ["nature", "mysterious"],
+      "roles": ["prefix"]
+    },
+
+    {
+      "value": "haru",
+      "reading": "はる",
+      "kind": "nature",
+      "vibes": ["nature"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "natsu",
+      "reading": "なつ",
+      "kind": "nature",
+      "vibes": ["nature"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "aki",
+      "reading": "あき",
+      "kind": "nature",
+      "vibes": ["nature"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "fuyu",
+      "reading": "ふゆ",
+      "kind": "nature",
+      "vibes": ["nature"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "sakurairo",
+      "reading": "さくらいろ",
+      "kind": "trait",
+      "vibes": ["nature", "sweet"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "momijiiro",
+      "reading": "もみじいろ",
+      "kind": "trait",
+      "vibes": ["nature"],
+      "roles": ["prefix"]
+    },
+
+    {
+      "value": "tokotoko",
+      "reading": "とことこ",
+      "kind": "motion",
+      "vibes": ["motion", "tiny"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "chokochoko",
+      "reading": "ちょこちょこ",
+      "kind": "motion",
+      "vibes": ["motion", "tiny"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "totototo",
+      "reading": "とととと",
+      "kind": "motion",
+      "vibes": ["motion", "tiny"],
+      "weirdness": 0.3,
+      "roles": ["prefix"]
+    },
+    {
+      "value": "nosonoso",
+      "reading": "のそのそ",
+      "kind": "motion",
+      "vibes": ["motion"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "yotayota",
+      "reading": "よたよた",
+      "kind": "motion",
+      "vibes": ["motion"],
+      "weirdness": 0.3,
+      "roles": ["prefix"]
+    },
+    {
+      "value": "kosokoso",
+      "reading": "こそこそ",
+      "kind": "motion",
+      "vibes": ["motion", "mysterious"],
+      "weirdness": 0.4,
+      "roles": ["prefix"]
+    },
+    {
+      "value": "chiramira",
+      "reading": "ちらみら",
+      "kind": "motion",
+      "vibes": ["motion", "weird"],
+      "weirdness": 0.5,
+      "roles": ["prefix"]
+    },
+    {
+      "value": "kurukuru",
+      "reading": "くるくる",
+      "kind": "motion",
+      "vibes": ["motion"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "guruguru",
+      "reading": "ぐるぐる",
+      "kind": "motion",
+      "vibes": ["motion"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "pokopoko",
+      "reading": "ぽこぽこ",
+      "kind": "sound",
+      "vibes": ["motion", "happy"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "pachipachi",
+      "reading": "ぱちぱち",
+      "kind": "sound",
+      "vibes": ["motion", "happy"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "yurayura",
+      "reading": "ゆらゆら",
+      "kind": "motion",
+      "vibes": ["motion", "sleepy"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "furafura",
+      "reading": "ふらふら",
+      "kind": "motion",
+      "vibes": ["motion", "weird"],
+      "weirdness": 0.4,
+      "roles": ["prefix"]
+    },
+    {
+      "value": "burabura",
+      "reading": "ぶらぶら",
+      "kind": "motion",
+      "vibes": ["motion", "sleepy"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "suisui",
+      "reading": "すいすい",
+      "kind": "motion",
+      "vibes": ["motion"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "hyokohyoko",
+      "reading": "ひょこひょこ",
+      "kind": "motion",
+      "vibes": ["motion", "weird"],
+      "weirdness": 0.4,
+      "roles": ["prefix"]
+    },
+    {
+      "value": "sorosoro",
+      "reading": "そろそろ",
+      "kind": "motion",
+      "vibes": ["motion", "sleepy"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "dotabata",
+      "reading": "どたばた",
+      "kind": "motion",
+      "vibes": ["motion", "weird"],
+      "weirdness": 0.6,
+      "roles": ["prefix"]
+    },
+    {
+      "value": "hyoihoi",
+      "reading": "ひょいひょい",
+      "kind": "motion",
+      "vibes": ["motion", "happy"],
+      "weirdness": 0.3,
+      "roles": ["prefix"]
+    },
+
+    {
+      "value": "ichigo",
+      "reading": "いちご",
+      "kind": "food",
+      "vibes": ["sweet"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "mikan",
+      "reading": "みかん",
+      "kind": "food",
+      "vibes": ["sweet"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "ringo",
+      "reading": "りんご",
+      "kind": "food",
+      "vibes": ["sweet"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "momo",
+      "reading": "もも",
+      "kind": "food",
+      "vibes": ["sweet"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "yuzu",
+      "reading": "ゆず",
+      "kind": "food",
+      "vibes": ["sweet", "nature"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "sakuranbo",
+      "reading": "さくらんぼ",
+      "kind": "food",
+      "vibes": ["sweet", "tiny"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "budou",
+      "reading": "ぶどう",
+      "kind": "food",
+      "vibes": ["sweet"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "kuri",
+      "reading": "くり",
+      "kind": "food",
+      "vibes": ["sweet", "nature"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "ramune",
+      "reading": "ラムネ",
+      "kind": "food",
+      "vibes": ["sweet"],
+      "weirdness": 0.8,
+      "roles": ["prefix", "suffix"]
+    },
+    {
+      "value": "purin",
+      "reading": "プリン",
+      "kind": "food",
+      "vibes": ["sweet"],
+      "weirdness": 1.0,
+      "roles": ["prefix", "suffix"]
+    },
+    {
+      "value": "kasutera",
+      "reading": "カステラ",
+      "kind": "food",
+      "vibes": ["sweet"],
+      "weirdness": 0.8,
+      "roles": ["prefix", "suffix"]
+    },
+    {
+      "value": "anmitsu",
+      "reading": "あんみつ",
+      "kind": "food",
+      "vibes": ["sweet"],
+      "weirdness": 0.5,
+      "roles": ["prefix"]
+    },
+    {
+      "value": "kinako",
+      "reading": "きなこ",
+      "kind": "food",
+      "vibes": ["sweet"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "azuki",
+      "reading": "あずき",
+      "kind": "food",
+      "vibes": ["sweet"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "mitsumame",
+      "reading": "みつまめ",
+      "kind": "food",
+      "vibes": ["sweet"],
+      "weirdness": 0.4,
+      "roles": ["prefix"]
+    },
+    {
+      "value": "kokoa",
+      "reading": "ココア",
+      "kind": "food",
+      "vibes": ["sweet", "sleepy"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "miruku",
+      "reading": "ミルク",
+      "kind": "food",
+      "vibes": ["sweet"],
+      "weirdness": 0.4,
+      "roles": ["prefix"]
+    },
+    {
+      "value": "mashumaro",
+      "reading": "マシュマロ",
+      "kind": "food",
+      "vibes": ["sweet", "fluffy"],
+      "weirdness": 0.9,
+      "roles": ["prefix", "suffix"]
+    },
+
+    {
+      "value": "maigo",
+      "reading": "まいご",
+      "kind": "concept",
+      "vibes": ["mysterious", "tiny"],
+      "weirdness": 0.4,
+      "roles": ["prefix"]
+    },
+    {
+      "value": "himitsu",
+      "reading": "ひみつ",
+      "kind": "concept",
+      "vibes": ["mysterious"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "fushigi",
+      "reading": "ふしぎ",
+      "kind": "concept",
+      "vibes": ["mysterious", "weird"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "mahoro",
+      "reading": "まほろ",
+      "kind": "concept",
+      "vibes": ["mysterious", "sleepy"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "yume",
+      "reading": "ゆめ",
+      "kind": "concept",
+      "vibes": ["mysterious", "sleepy"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "maboroshi",
+      "reading": "まぼろし",
+      "kind": "concept",
+      "vibes": ["mysterious"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "utakata",
+      "reading": "うたかた",
+      "kind": "concept",
+      "vibes": ["mysterious", "nature"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "kagerou",
+      "reading": "かげろう",
+      "kind": "concept",
+      "vibes": ["mysterious", "nature"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "ayakashi",
+      "reading": "あやかし",
+      "kind": "creature",
+      "vibes": ["mysterious", "weird"],
+      "weirdness": 0.5,
+      "roles": ["prefix"]
+    },
+    {
+      "value": "natsukashi",
+      "reading": "なつかし",
+      "kind": "concept",
+      "vibes": ["mysterious", "sleepy"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "toomawari",
+      "reading": "とおまわり",
+      "kind": "motion",
+      "vibes": ["mysterious", "motion"],
+      "weirdness": 0.3,
+      "roles": ["prefix"]
+    },
+    {
+      "value": "obake",
+      "reading": "おばけ",
+      "kind": "creature",
+      "vibes": ["mysterious", "weird"],
+      "weirdness": 0.6,
+      "roles": ["prefix"]
+    },
+
+    {
+      "value": "chiisana",
+      "reading": "ちいさな",
+      "kind": "trait",
+      "vibes": ["tiny"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "chibi",
+      "reading": "ちび",
+      "kind": "trait",
+      "vibes": ["tiny"],
+      "weirdness": 0.3,
+      "roles": ["prefix"]
+    },
+    {
+      "value": "hitohira",
+      "reading": "ひとひら",
+      "kind": "nature",
+      "vibes": ["tiny", "nature"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "hitotsubu",
+      "reading": "ひとつぶ",
+      "kind": "nature",
+      "vibes": ["tiny"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "masshiro",
+      "reading": "まっしろ",
+      "kind": "trait",
+      "vibes": ["tiny", "nature"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "usumomo",
+      "reading": "うすもも",
+      "kind": "trait",
+      "vibes": ["tiny", "nature"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "sorairo",
+      "reading": "そらいろ",
+      "kind": "trait",
+      "vibes": ["tiny", "nature"],
+      "roles": ["prefix"]
+    },
+    {
+      "value": "pokkari",
+      "reading": "ぽっかり",
+      "kind": "texture",
+      "vibes": ["tiny", "weird"],
+      "weirdness": 0.4,
+      "roles": ["prefix"]
+    },
+
+    {
+      "value": "dekoboko",
+      "reading": "でこぼこ",
+      "kind": "texture",
+      "vibes": ["weird"],
+      "weirdness": 0.5,
+      "roles": ["prefix"]
+    },
+    {
+      "value": "gizagiza",
+      "reading": "ぎざぎざ",
+      "kind": "texture",
+      "vibes": ["weird"],
+      "weirdness": 0.5,
+      "roles": ["prefix"]
+    },
+    {
+      "value": "hetappi",
+      "reading": "へたっぴ",
+      "kind": "trait",
+      "vibes": ["weird", "happy"],
+      "weirdness": 0.6,
+      "roles": ["prefix"]
+    },
+    {
+      "value": "henoheno",
+      "reading": "へのへの",
+      "kind": "texture",
+      "vibes": ["weird"],
+      "weirdness": 0.8,
+      "roles": ["prefix"]
+    },
+    {
+      "value": "nazonazo",
+      "reading": "なぞなぞ",
+      "kind": "concept",
+      "vibes": ["weird", "mysterious"],
+      "weirdness": 0.5,
+      "roles": ["prefix"]
+    },
+    {
+      "value": "patapata",
+      "reading": "ぱたぱた",
+      "kind": "motion",
+      "vibes": ["weird", "motion"],
+      "weirdness": 0.3,
+      "roles": ["prefix"]
+    },
+
+    {
+      "value": "koguma",
+      "reading": "こぐま",
+      "kind": "creature",
+      "vibes": ["fluffy", "tiny"],
+      "weirdness": 0.1,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "kuma",
+      "reading": "くま",
+      "kind": "creature",
+      "vibes": ["fluffy"],
+      "weirdness": 0.2,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "usagi",
+      "reading": "うさぎ",
+      "kind": "creature",
+      "vibes": ["fluffy", "tiny"],
+      "weirdness": 0.1,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "risu",
+      "reading": "りす",
+      "kind": "creature",
+      "vibes": ["fluffy", "tiny"],
+      "roles": ["suffix"]
+    },
+    {
+      "value": "hamster",
+      "reading": "ハムスター",
+      "kind": "creature",
+      "vibes": ["fluffy", "tiny"],
+      "roles": ["suffix"]
+    },
+    {
+      "value": "marmot",
+      "reading": "マーモット",
+      "kind": "creature",
+      "vibes": ["fluffy", "sleepy"],
+      "weirdness": 0.3,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "chinchilla",
+      "reading": "チンチラ",
+      "kind": "creature",
+      "vibes": ["fluffy"],
+      "weirdness": 0.3,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "alpaca",
+      "reading": "アルパカ",
+      "kind": "creature",
+      "vibes": ["fluffy"],
+      "weirdness": 0.3,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "hitsuji",
+      "reading": "ひつじ",
+      "kind": "creature",
+      "vibes": ["fluffy", "sleepy"],
+      "roles": ["suffix"]
+    },
+    {
+      "value": "yagi",
+      "reading": "やぎ",
+      "kind": "creature",
+      "vibes": ["nature", "weird"],
+      "weirdness": 0.3,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "kojika",
+      "reading": "こじか",
+      "kind": "creature",
+      "vibes": ["tiny", "nature"],
+      "roles": ["suffix"]
+    },
+    {
+      "value": "shika",
+      "reading": "しか",
+      "kind": "creature",
+      "vibes": ["nature"],
+      "roles": ["suffix"]
+    },
+    {
+      "value": "kitsune",
+      "reading": "きつね",
+      "kind": "creature",
+      "vibes": ["fluffy", "mysterious"],
+      "weirdness": 0.3,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "tanuki",
+      "reading": "たぬき",
+      "kind": "creature",
+      "vibes": ["fluffy", "weird"],
+      "weirdness": 0.5,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "mujina",
+      "reading": "むじな",
+      "kind": "creature",
+      "vibes": ["weird", "mysterious"],
+      "weirdness": 0.6,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "okojo",
+      "reading": "おこじょ",
+      "kind": "creature",
+      "vibes": ["fluffy", "tiny"],
+      "weirdness": 0.4,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "momoonga",
+      "reading": "ももんが",
+      "kind": "creature",
+      "vibes": ["fluffy", "tiny"],
+      "weirdness": 0.3,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "musasabi",
+      "reading": "むささび",
+      "kind": "creature",
+      "vibes": ["fluffy", "mysterious"],
+      "weirdness": 0.4,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "harinezumi",
+      "reading": "はりねずみ",
+      "kind": "creature",
+      "vibes": ["tiny"],
+      "weirdness": 0.3,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "itachi",
+      "reading": "いたち",
+      "kind": "creature",
+      "vibes": ["motion"],
+      "weirdness": 0.4,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "ten",
+      "reading": "てん",
+      "kind": "creature",
+      "vibes": ["tiny"],
+      "weirdness": 0.4,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "anaguma",
+      "reading": "あなぐま",
+      "kind": "creature",
+      "vibes": ["weird"],
+      "weirdness": 0.5,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "araiguma",
+      "reading": "あらいぐま",
+      "kind": "creature",
+      "vibes": ["fluffy", "weird"],
+      "weirdness": 0.4,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "yamaneko",
+      "reading": "やまねこ",
+      "kind": "creature",
+      "vibes": ["mysterious", "nature"],
+      "weirdness": 0.4,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "koala",
+      "reading": "コアラ",
+      "kind": "creature",
+      "vibes": ["sleepy", "fluffy"],
+      "weirdness": 0.3,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "panda",
+      "reading": "パンダ",
+      "kind": "creature",
+      "vibes": ["sleepy", "fluffy"],
+      "weirdness": 0.3,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "kapibara",
+      "reading": "カピバラ",
+      "kind": "creature",
+      "vibes": ["sleepy"],
+      "weirdness": 0.4,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "namakemono",
+      "reading": "なまけもの",
+      "kind": "creature",
+      "vibes": ["sleepy", "weird"],
+      "weirdness": 0.6,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "kuokka",
+      "reading": "クオッカ",
+      "kind": "creature",
+      "vibes": ["happy", "tiny"],
+      "weirdness": 0.5,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "wombat",
+      "reading": "ウォンバット",
+      "kind": "creature",
+      "vibes": ["sleepy", "fluffy"],
+      "weirdness": 0.4,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "neko",
+      "reading": "ねこ",
+      "kind": "creature",
+      "vibes": ["fluffy", "sleepy"],
+      "roles": ["suffix"]
+    },
+    {
+      "value": "koinu",
+      "reading": "こいぬ",
+      "kind": "creature",
+      "vibes": ["tiny", "happy"],
+      "roles": ["suffix"]
+    },
+    {
+      "value": "ferret",
+      "reading": "フェレット",
+      "kind": "creature",
+      "vibes": ["motion", "weird"],
+      "weirdness": 0.4,
+      "roles": ["suffix"]
+    },
+
+    {
+      "value": "hiyoko",
+      "reading": "ひよこ",
+      "kind": "creature",
+      "vibes": ["tiny", "happy"],
+      "roles": ["suffix"]
+    },
+    {
+      "value": "ahiru",
+      "reading": "あひる",
+      "kind": "creature",
+      "vibes": ["happy", "motion"],
+      "roles": ["suffix"]
+    },
+    {
+      "value": "buncho",
+      "reading": "ぶんちょう",
+      "kind": "creature",
+      "vibes": ["tiny"],
+      "roles": ["suffix"]
+    },
+    {
+      "value": "inko",
+      "reading": "いんこ",
+      "kind": "creature",
+      "vibes": ["tiny", "happy"],
+      "roles": ["suffix"]
+    },
+    {
+      "value": "kanaria",
+      "reading": "カナリア",
+      "kind": "creature",
+      "vibes": ["tiny", "happy"],
+      "roles": ["suffix"]
+    },
+    {
+      "value": "shijukara",
+      "reading": "しじゅうから",
+      "kind": "creature",
+      "vibes": ["tiny", "nature"],
+      "weirdness": 0.4,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "komadori",
+      "reading": "こまどり",
+      "kind": "creature",
+      "vibes": ["tiny", "nature"],
+      "roles": ["suffix"]
+    },
+    {
+      "value": "kotori",
+      "reading": "ことり",
+      "kind": "creature",
+      "vibes": ["tiny", "nature"],
+      "roles": ["suffix"]
+    },
+    {
+      "value": "fukurou",
+      "reading": "ふくろう",
+      "kind": "creature",
+      "vibes": ["mysterious", "sleepy"],
+      "weirdness": 0.4,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "mimizuku",
+      "reading": "みみずく",
+      "kind": "creature",
+      "vibes": ["mysterious", "sleepy"],
+      "weirdness": 0.4,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "hato",
+      "reading": "はと",
+      "kind": "creature",
+      "vibes": ["nature"],
+      "weirdness": 0.3,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "niwatori",
+      "reading": "にわとり",
+      "kind": "creature",
+      "vibes": ["weird"],
+      "weirdness": 0.5,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "suzume",
+      "reading": "すずめ",
+      "kind": "creature",
+      "vibes": ["tiny", "nature"],
+      "roles": ["suffix"]
+    },
+    {
+      "value": "tsubame",
+      "reading": "つばめ",
+      "kind": "creature",
+      "vibes": ["nature", "motion"],
+      "roles": ["suffix"]
+    },
+    {
+      "value": "hibari",
+      "reading": "ひばり",
+      "kind": "creature",
+      "vibes": ["nature", "happy"],
+      "roles": ["suffix"]
+    },
+    {
+      "value": "mejiro",
+      "reading": "めじろ",
+      "kind": "creature",
+      "vibes": ["tiny", "nature"],
+      "roles": ["suffix"]
+    },
+    {
+      "value": "uguisu",
+      "reading": "うぐいす",
+      "kind": "creature",
+      "vibes": ["nature", "happy"],
+      "roles": ["suffix"]
+    },
+    {
+      "value": "karugamo",
+      "reading": "かるがも",
+      "kind": "creature",
+      "vibes": ["nature", "sleepy"],
+      "weirdness": 0.3,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "kamo",
+      "reading": "かも",
+      "kind": "creature",
+      "vibes": ["nature", "happy"],
+      "weirdness": 0.3,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "kamome",
+      "reading": "かもめ",
+      "kind": "creature",
+      "vibes": ["nature", "motion"],
+      "roles": ["suffix"]
+    },
+    {
+      "value": "hakucho",
+      "reading": "はくちょう",
+      "kind": "creature",
+      "vibes": ["nature", "mysterious"],
+      "weirdness": 0.3,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "oumu",
+      "reading": "おうむ",
+      "kind": "creature",
+      "vibes": ["weird", "happy"],
+      "weirdness": 0.6,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "pengin",
+      "reading": "ペンギン",
+      "kind": "creature",
+      "vibes": ["happy", "motion"],
+      "weirdness": 0.2,
+      "roles": ["suffix"]
+    },
+
+    {
+      "value": "rakko",
+      "reading": "らっこ",
+      "kind": "creature",
+      "vibes": ["happy", "fluffy"],
+      "roles": ["suffix"]
+    },
+    {
+      "value": "azarashi",
+      "reading": "あざらし",
+      "kind": "creature",
+      "vibes": ["sleepy", "fluffy"],
+      "roles": ["suffix"]
+    },
+    {
+      "value": "kurage",
+      "reading": "くらげ",
+      "kind": "creature",
+      "vibes": ["sleepy", "mysterious"],
+      "weirdness": 0.5,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "iruka",
+      "reading": "いるか",
+      "kind": "creature",
+      "vibes": ["happy"],
+      "roles": ["suffix"]
+    },
+    {
+      "value": "kujira",
+      "reading": "くじら",
+      "kind": "creature",
+      "vibes": ["nature", "sleepy"],
+      "weirdness": 0.3,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "manbou",
+      "reading": "まんぼう",
+      "kind": "creature",
+      "vibes": ["weird", "sleepy"],
+      "weirdness": 0.8,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "kani",
+      "reading": "かに",
+      "kind": "creature",
+      "vibes": ["weird", "motion"],
+      "weirdness": 0.5,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "ebi",
+      "reading": "えび",
+      "kind": "creature",
+      "vibes": ["weird", "tiny"],
+      "weirdness": 0.6,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "yadokari",
+      "reading": "やどかり",
+      "kind": "creature",
+      "vibes": ["tiny", "weird"],
+      "weirdness": 0.6,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "umigame",
+      "reading": "うみがめ",
+      "kind": "creature",
+      "vibes": ["nature", "sleepy"],
+      "weirdness": 0.3,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "chinanago",
+      "reading": "ちんあなご",
+      "kind": "creature",
+      "vibes": ["weird", "tiny"],
+      "weirdness": 0.9,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "tako",
+      "reading": "たこ",
+      "kind": "creature",
+      "vibes": ["weird", "fluffy"],
+      "weirdness": 0.7,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "ika",
+      "reading": "いか",
+      "kind": "creature",
+      "vibes": ["weird"],
+      "weirdness": 0.7,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "hotate",
+      "reading": "ほたて",
+      "kind": "creature",
+      "vibes": ["weird"],
+      "weirdness": 0.7,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "hamaguri",
+      "reading": "はまぐり",
+      "kind": "creature",
+      "vibes": ["weird", "tiny"],
+      "weirdness": 0.6,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "umiushi",
+      "reading": "うみうし",
+      "kind": "creature",
+      "vibes": ["weird"],
+      "weirdness": 0.8,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "hitode",
+      "reading": "ひとで",
+      "kind": "creature",
+      "vibes": ["weird", "nature"],
+      "weirdness": 0.6,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "tatsu",
+      "reading": "たつ",
+      "kind": "creature",
+      "vibes": ["mysterious", "weird"],
+      "weirdness": 0.5,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "tobiuo",
+      "reading": "とびうお",
+      "kind": "creature",
+      "vibes": ["motion", "nature"],
+      "weirdness": 0.4,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "fugu",
+      "reading": "ふぐ",
+      "kind": "creature",
+      "vibes": ["weird"],
+      "weirdness": 0.7,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "iwashi",
+      "reading": "いわし",
+      "kind": "creature",
+      "vibes": ["motion"],
+      "weirdness": 0.5,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "mendako",
+      "reading": "めんだこ",
+      "kind": "creature",
+      "vibes": ["fluffy", "weird"],
+      "weirdness": 0.8,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "kurione",
+      "reading": "クリオネ",
+      "kind": "creature",
+      "vibes": ["mysterious", "tiny"],
+      "weirdness": 0.6,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "namazu",
+      "reading": "なまず",
+      "kind": "creature",
+      "vibes": ["weird", "sleepy"],
+      "weirdness": 0.7,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "dojou",
+      "reading": "どじょう",
+      "kind": "creature",
+      "vibes": ["weird", "tiny"],
+      "weirdness": 0.7,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "medaka",
+      "reading": "めだか",
+      "kind": "creature",
+      "vibes": ["tiny"],
+      "weirdness": 0.3,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "kingyo",
+      "reading": "きんぎょ",
+      "kind": "creature",
+      "vibes": ["happy", "nature"],
+      "weirdness": 0.3,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "kame",
+      "reading": "かめ",
+      "kind": "creature",
+      "vibes": ["sleepy", "nature"],
+      "weirdness": 0.3,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "same",
+      "reading": "さめ",
+      "kind": "creature",
+      "vibes": ["weird"],
+      "weirdness": 0.7,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "kaeru",
+      "reading": "かえる",
+      "kind": "creature",
+      "vibes": ["nature", "weird"],
+      "weirdness": 0.4,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "otamajakushi",
+      "reading": "おたまじゃくし",
+      "kind": "creature",
+      "vibes": ["tiny", "weird"],
+      "weirdness": 0.6,
+      "roles": ["suffix"]
+    },
+
+    {
+      "value": "yamori",
+      "reading": "やもり",
+      "kind": "creature",
+      "vibes": ["nature", "mysterious"],
+      "weirdness": 0.4,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "tokage",
+      "reading": "とかげ",
+      "kind": "creature",
+      "vibes": ["nature"],
+      "weirdness": 0.4,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "imori",
+      "reading": "いもり",
+      "kind": "creature",
+      "vibes": ["nature", "mysterious"],
+      "weirdness": 0.5,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "hebi",
+      "reading": "へび",
+      "kind": "creature",
+      "vibes": ["weird", "mysterious"],
+      "weirdness": 0.6,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "kamereon",
+      "reading": "カメレオン",
+      "kind": "creature",
+      "vibes": ["weird", "mysterious"],
+      "weirdness": 0.5,
+      "roles": ["suffix"]
+    },
+
+    {
+      "value": "tentoumushi",
+      "reading": "てんとうむし",
+      "kind": "creature",
+      "vibes": ["tiny", "nature"],
+      "weirdness": 0.3,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "hotaru",
+      "reading": "ほたる",
+      "kind": "creature",
+      "vibes": ["nature", "mysterious"],
+      "weirdness": 0.4,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "chouchou",
+      "reading": "ちょうちょう",
+      "kind": "creature",
+      "vibes": ["nature", "happy"],
+      "weirdness": 0.3,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "mitsubachi",
+      "reading": "みつばち",
+      "kind": "creature",
+      "vibes": ["tiny", "happy"],
+      "weirdness": 0.3,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "tonbo",
+      "reading": "とんぼ",
+      "kind": "creature",
+      "vibes": ["nature", "motion"],
+      "weirdness": 0.3,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "minomushi",
+      "reading": "みのむし",
+      "kind": "creature",
+      "vibes": ["weird", "tiny"],
+      "weirdness": 0.7,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "semi",
+      "reading": "せみ",
+      "kind": "creature",
+      "vibes": ["nature"],
+      "weirdness": 0.4,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "suzumushi",
+      "reading": "すずむし",
+      "kind": "creature",
+      "vibes": ["nature", "mysterious"],
+      "weirdness": 0.4,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "kanabun",
+      "reading": "かなぶん",
+      "kind": "creature",
+      "vibes": ["weird"],
+      "weirdness": 0.6,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "dangomushi",
+      "reading": "だんごむし",
+      "kind": "creature",
+      "vibes": ["weird", "tiny"],
+      "weirdness": 0.7,
+      "roles": ["suffix"]
+    },
+
+    {
+      "value": "donguri",
+      "reading": "どんぐり",
+      "kind": "nature",
+      "vibes": ["nature", "tiny"],
+      "roles": ["suffix"]
+    },
+    {
+      "value": "kinoko",
+      "reading": "きのこ",
+      "kind": "nature",
+      "vibes": ["nature", "weird"],
+      "weirdness": 0.5,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "tanpopo",
+      "reading": "たんぽぽ",
+      "kind": "nature",
+      "vibes": ["nature"],
+      "roles": ["suffix"]
+    },
+    {
+      "value": "sumire",
+      "reading": "すみれ",
+      "kind": "nature",
+      "vibes": ["nature", "tiny"],
+      "roles": ["suffix"]
+    },
+    {
+      "value": "renge",
+      "reading": "れんげ",
+      "kind": "nature",
+      "vibes": ["nature", "tiny"],
+      "roles": ["suffix"]
+    },
+    {
+      "value": "tsukushi",
+      "reading": "つくし",
+      "kind": "nature",
+      "vibes": ["nature", "tiny"],
+      "weirdness": 0.4,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "kuroba",
+      "reading": "くろば",
+      "kind": "nature",
+      "vibes": ["nature", "happy"],
+      "roles": ["suffix"]
+    },
+    {
+      "value": "momiji",
+      "reading": "もみじ",
+      "kind": "nature",
+      "vibes": ["nature"],
+      "roles": ["suffix"]
+    },
+    {
+      "value": "sakura",
+      "reading": "さくら",
+      "kind": "nature",
+      "vibes": ["nature", "happy"],
+      "roles": ["suffix"]
+    },
+    {
+      "value": "ume",
+      "reading": "うめ",
+      "kind": "nature",
+      "vibes": ["nature"],
+      "roles": ["suffix"]
+    },
+    {
+      "value": "matsubokkuri",
+      "reading": "まつぼっくり",
+      "kind": "nature",
+      "vibes": ["nature", "weird"],
+      "weirdness": 0.6,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "himawari",
+      "reading": "ひまわり",
+      "kind": "nature",
+      "vibes": ["nature", "happy"],
+      "roles": ["suffix"]
+    },
+    {
+      "value": "asagao",
+      "reading": "あさがお",
+      "kind": "nature",
+      "vibes": ["nature"],
+      "roles": ["suffix"]
+    },
+    {
+      "value": "hoshi",
+      "reading": "ほし",
+      "kind": "nature",
+      "vibes": ["nature", "mysterious"],
+      "roles": ["suffix"]
+    },
+    {
+      "value": "tsuki",
+      "reading": "つき",
+      "kind": "nature",
+      "vibes": ["nature", "mysterious"],
+      "roles": ["suffix"]
+    },
+    {
+      "value": "kumo",
+      "reading": "くも",
+      "kind": "nature",
+      "vibes": ["nature", "weather"],
+      "roles": ["suffix"]
+    },
+    {
+      "value": "kakera",
+      "reading": "かけら",
+      "kind": "object",
+      "vibes": ["tiny", "mysterious"],
+      "weirdness": 0.4,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "tane",
+      "reading": "たね",
+      "kind": "nature",
+      "vibes": ["tiny", "nature"],
+      "weirdness": 0.3,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "suisei",
+      "reading": "すいせい",
+      "kind": "nature",
+      "vibes": ["mysterious", "nature"],
+      "weirdness": 0.5,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "ryuusei",
+      "reading": "りゅうせい",
+      "kind": "nature",
+      "vibes": ["mysterious", "motion"],
+      "weirdness": 0.4,
+      "roles": ["suffix"]
+    },
+
+    {
+      "value": "mochi",
+      "reading": "もち",
+      "kind": "food",
+      "vibes": ["sweet", "fluffy"],
+      "weirdness": 0.9,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "dango",
+      "reading": "だんご",
+      "kind": "food",
+      "vibes": ["sweet"],
+      "weirdness": 0.9,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "manju",
+      "reading": "まんじゅう",
+      "kind": "food",
+      "vibes": ["sweet"],
+      "weirdness": 0.9,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "pan",
+      "reading": "パン",
+      "kind": "food",
+      "vibes": ["sweet"],
+      "weirdness": 0.8,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "macaron",
+      "reading": "マカロン",
+      "kind": "food",
+      "vibes": ["sweet", "tiny"],
+      "weirdness": 0.8,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "cookie",
+      "reading": "クッキー",
+      "kind": "food",
+      "vibes": ["sweet"],
+      "weirdness": 0.8,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "donut",
+      "reading": "ドーナツ",
+      "kind": "food",
+      "vibes": ["sweet"],
+      "weirdness": 0.8,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "konpeitou",
+      "reading": "こんぺいとう",
+      "kind": "food",
+      "vibes": ["sweet", "tiny"],
+      "weirdness": 0.7,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "mitarashi",
+      "reading": "みたらし",
+      "kind": "food",
+      "vibes": ["sweet"],
+      "weirdness": 0.9,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "daifuku",
+      "reading": "だいふく",
+      "kind": "food",
+      "vibes": ["sweet", "fluffy"],
+      "weirdness": 0.9,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "dorayaki",
+      "reading": "どらやき",
+      "kind": "food",
+      "vibes": ["sweet"],
+      "weirdness": 0.9,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "taiyaki",
+      "reading": "たいやき",
+      "kind": "food",
+      "vibes": ["sweet", "weird"],
+      "weirdness": 1.0,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "monaka",
+      "reading": "もなか",
+      "kind": "food",
+      "vibes": ["sweet"],
+      "weirdness": 0.8,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "yokan",
+      "reading": "ようかん",
+      "kind": "food",
+      "vibes": ["sweet", "mysterious"],
+      "weirdness": 0.8,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "okoshi",
+      "reading": "おこし",
+      "kind": "food",
+      "vibes": ["sweet", "weird"],
+      "weirdness": 0.9,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "kakigori",
+      "reading": "かきごおり",
+      "kind": "food",
+      "vibes": ["sweet"],
+      "weirdness": 0.8,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "shiratama",
+      "reading": "しらたま",
+      "kind": "food",
+      "vibes": ["sweet", "fluffy"],
+      "weirdness": 0.9,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "wataame",
+      "reading": "わたあめ",
+      "kind": "food",
+      "vibes": ["sweet", "fluffy"],
+      "weirdness": 0.8,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "sembei",
+      "reading": "せんべい",
+      "kind": "food",
+      "vibes": ["sweet"],
+      "weirdness": 0.8,
+      "roles": ["suffix"]
+    },
+
+    {
+      "value": "furin",
+      "reading": "ふうりん",
+      "kind": "object",
+      "vibes": ["nature", "mysterious"],
+      "weirdness": 0.6,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "omamori",
+      "reading": "おまもり",
+      "kind": "object",
+      "vibes": ["mysterious", "tiny"],
+      "weirdness": 0.6,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "orugoru",
+      "reading": "オルゴール",
+      "kind": "object",
+      "vibes": ["mysterious", "tiny"],
+      "weirdness": 0.6,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "tsuzumi",
+      "reading": "つづみ",
+      "kind": "object",
+      "vibes": ["motion", "weird"],
+      "weirdness": 0.7,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "otedama",
+      "reading": "おてだま",
+      "kind": "object",
+      "vibes": ["tiny", "motion"],
+      "weirdness": 0.6,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "hyottoko",
+      "reading": "ひょっとこ",
+      "kind": "object",
+      "vibes": ["weird", "happy"],
+      "weirdness": 0.9,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "okame",
+      "reading": "おかめ",
+      "kind": "object",
+      "vibes": ["weird", "mysterious"],
+      "weirdness": 0.8,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "teruteru",
+      "reading": "てるてる",
+      "kind": "object",
+      "vibes": ["weather", "weird"],
+      "weirdness": 0.8,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "noren",
+      "reading": "のれん",
+      "kind": "object",
+      "vibes": ["mysterious"],
+      "weirdness": 0.6,
+      "roles": ["suffix"]
+    }
+  ]
+}

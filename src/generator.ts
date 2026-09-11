@@ -1,4 +1,4 @@
-import { prefixes, suffixes } from "./dictionary/index.ts";
+import { prefixes, suffixes } from "./dictionary.ts";
 import { rngFromSeed } from "./random.ts";
 import type { GenerateOptions, Vibe, Word } from "./types.ts";
 

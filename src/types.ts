@@ -10,11 +10,34 @@ export type Vibe =
   | "tiny"
   | "weird";
 
+export type Kind =
+  | "texture"
+  | "mood"
+  | "motion"
+  | "sound"
+  | "nature"
+  | "food"
+  | "creature"
+  | "object"
+  | "concept"
+  | "trait";
+
+/** Which slug slot a word can occupy. */
+export type WordRole = "prefix" | "suffix";
+
 export interface Word {
+  /** Lowercase ASCII romaji form, safe for slugs and identifiers. */
   value: string;
+  /** Japanese orthography (hiragana for native words, katakana for loanwords). */
+  reading: string;
+  /** Lexical category — what the word denotes. */
+  kind: Kind;
+  /** Mood tags used by `vibe` filtering. */
   vibes: Vibe[];
   /** 0.0–1.0; how out-of-place the word feels. Boosted by chaos. */
   weirdness?: number;
+  /** Slots this word may occupy when composing a slug. */
+  roles: WordRole[];
 }
 
 export interface GenerateOptions {

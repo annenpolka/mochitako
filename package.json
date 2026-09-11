@@ -1,7 +1,7 @@
 {
   "name": "mochitako",
-  "version": "0.1.0",
-  "description": "Cute random slug generator — Docker-style names, but mochi.",
+  "version": "0.2.0",
+  "description": "A curated vocabulary of cute Japanese-inspired words — with a slug generator as its reference implementation.",
   "type": "module",
   "bin": {
     "mochitako": "./dist/cli.mjs"
@@ -10,10 +10,13 @@
     ".": {
       "types": "./dist/index.d.mts",
       "import": "./dist/index.mjs"
-    }
+    },
+    "./words.json": "./data/words.json"
   },
   "files": [
-    "dist"
+    "dist",
+    "data",
+    "schema"
   ],
   "engines": {
     "node": ">=22"
@@ -28,6 +31,10 @@
     "prepublishOnly": "pnpm build"
   },
   "keywords": [
+    "vocabulary",
+    "dictionary",
+    "word-list",
+    "japanese",
     "slug",
     "name-generator",
     "random",
