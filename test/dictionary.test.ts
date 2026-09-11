@@ -34,12 +34,15 @@ describe("vocabulary corpus", () => {
   it("maps each reading to a single value (no duplicate romanizations)", () => {
     const byReading = new Map<string, string>();
     for (const w of words) {
-      const existing = byReading.get(w.reading);
+      const normalized = w.reading
+        .normalize("NFKC")
+        .replace(/[ァ-ヶ]/g, (c) => String.fromCharCode(c.charCodeAt(0) - 96));
+      const existing = byReading.get(normalized);
       expect(
         existing === undefined || existing === w.value,
         `reading "${w.reading}" is shared by "${existing}" and "${w.value}"`,
       ).toBe(true);
-      byReading.set(w.reading, w.value);
+      byReading.set(normalized, w.value);
     }
   });
 

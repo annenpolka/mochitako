@@ -33,8 +33,8 @@ mochimochi-tako
 - `weirdness` (0–1) — how out-of-place the word feels
 - `roles` — which slug slots the word can occupy (`prefix` / `suffix`)
 
-The corpus holds 316 words (150 prefix-eligible, 170 suffix-eligible;
-four foods like `purin` play both roles). Compose it however you like —
+The corpus holds 921 words (500 prefix-eligible, 500 suffix-eligible;
+79 entries play both roles), giving 250,000 possible combinations. Compose it however you like —
 `mochimochi_tako`, `MochimochiTako`, `もちもちたこ` — the schema is at
 `schema/words.schema.json`.
 
@@ -44,7 +44,7 @@ Library:
 
 ```ts
 import {
-  words,          // all 316 entries
+  words,          // all 921 entries
   prefixes,       // entries whose roles include "prefix"
   suffixes,       // entries whose roles include "suffix"
   generate,
