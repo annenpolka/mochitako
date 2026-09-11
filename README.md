@@ -33,7 +33,7 @@ mochimochi-tako
 - `weirdness` (0–1) — how out-of-place the word feels
 - `roles` — which slug slots the word can occupy (`prefix` / `suffix`)
 
-The corpus holds 300 words (150 prefix-eligible, 154 suffix-eligible;
+The corpus holds 316 words (150 prefix-eligible, 170 suffix-eligible;
 four foods like `purin` play both roles). Compose it however you like —
 `mochimochi_tako`, `MochimochiTako`, `もちもちたこ` — the schema is at
 `schema/words.schema.json`.
@@ -44,7 +44,7 @@ Library:
 
 ```ts
 import {
-  words,          // all 300 entries
+  words,          // all 316 entries
   prefixes,       // entries whose roles include "prefix"
   suffixes,       // entries whose roles include "suffix"
   generate,
@@ -104,3 +104,15 @@ pnpm typecheck      # tsc --noEmit
 pnpm lint           # biome check
 pnpm build          # tsdown → dist/
 ```
+
+## Dictionary evaluation
+
+```sh
+pnpm eval:serve                      # open http://127.0.0.1:4318/
+# answers save automatically to evaluation/results/
+```
+
+Compare two names with one side held constant. Each session ends after ten
+questions; skip, undo, and resume are supported without entering scores or
+managing JSON. Existing browser-only answers can be imported once from a backup. See [the evaluation guide](evaluation/README.md) for sampling,
+optional backup/reporting, and interpretation limits.

@@ -2270,6 +2270,135 @@
       "vibes": ["mysterious"],
       "weirdness": 0.6,
       "roles": ["suffix"]
+    },
+
+    {
+      "value": "shimaenaga",
+      "reading": "しまえなが",
+      "kind": "creature",
+      "vibes": ["fluffy", "tiny", "nature"],
+      "weirdness": 0.3,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "udon",
+      "reading": "うどん",
+      "kind": "food",
+      "vibes": ["motion", "weird"],
+      "weirdness": 0.8,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "karuta",
+      "reading": "かるた",
+      "kind": "object",
+      "vibes": ["happy", "tiny"],
+      "weirdness": 0.6,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "mizore",
+      "reading": "みぞれ",
+      "kind": "nature",
+      "vibes": ["weather"],
+      "weirdness": 0.3,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "asahi",
+      "reading": "あさひ",
+      "kind": "nature",
+      "vibes": ["nature", "happy"],
+      "weirdness": 0.2,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "chidori",
+      "reading": "ちどり",
+      "kind": "creature",
+      "vibes": ["tiny", "nature"],
+      "weirdness": 0.3,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "daruma",
+      "reading": "だるま",
+      "kind": "object",
+      "vibes": ["weird", "happy"],
+      "weirdness": 0.8,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "ginga",
+      "reading": "ぎんが",
+      "kind": "nature",
+      "vibes": ["nature", "mysterious"],
+      "weirdness": 0.4,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "shimauma",
+      "reading": "しまうま",
+      "kind": "creature",
+      "vibes": ["nature"],
+      "weirdness": 0.4,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "nuigurumi",
+      "reading": "ぬいぐるみ",
+      "kind": "object",
+      "vibes": ["fluffy", "happy"],
+      "weirdness": 0.5,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "susuki",
+      "reading": "すすき",
+      "kind": "nature",
+      "vibes": ["nature"],
+      "weirdness": 0.2,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "kazaguruma",
+      "reading": "かざぐるま",
+      "kind": "object",
+      "vibes": ["motion", "nature"],
+      "weirdness": 0.6,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "kinmokusei",
+      "reading": "きんもくせい",
+      "kind": "nature",
+      "vibes": ["nature"],
+      "weirdness": 0.3,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "tsubomi",
+      "reading": "つぼみ",
+      "kind": "nature",
+      "vibes": ["nature", "tiny"],
+      "weirdness": 0.2,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "chochin",
+      "reading": "ちょうちん",
+      "kind": "object",
+      "vibes": ["mysterious", "happy"],
+      "weirdness": 0.6,
+      "roles": ["suffix"]
+    },
+    {
+      "value": "origami",
+      "reading": "おりがみ",
+      "kind": "object",
+      "vibes": ["tiny", "happy"],
+      "weirdness": 0.6,
+      "roles": ["suffix"]
     }
   ]
 }

@@ -3,3 +3,5 @@ dist/
 .pnpm-store/
 *.log
 .DS_Store
+evaluation/output/
+evaluation/results/

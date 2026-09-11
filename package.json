@@ -1,7 +1,7 @@
 {
   "name": "mochitako",
   "version": "0.2.0",
-  "description": "A curated vocabulary of cute Japanese-inspired words — with a slug generator as its reference implementation.",
+  "description": "A curated vocabulary of cute Japanese-inspired words \u2014 with a slug generator as its reference implementation.",
   "type": "module",
   "bin": {
     "mochitako": "./dist/cli.mjs"
@@ -28,7 +28,11 @@
     "typecheck": "tsc --noEmit",
     "lint": "biome check .",
     "fmt": "biome check --write .",
-    "prepublishOnly": "pnpm build"
+    "prepublishOnly": "pnpm build",
+    "eval:pairs": "node src/evaluation-cli.ts prepare",
+    "eval:report": "node src/evaluation-cli.ts report",
+    "eval:serve": "node src/evaluation-serve.ts",
+    "eval:candidates": "node src/evaluation-candidates-serve.ts"
   },
   "keywords": [
     "vocabulary",

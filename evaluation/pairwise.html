@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="ja">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>mochitako — どっちが好き？</title>
+<style>
+:root{font-family:system-ui,sans-serif;color:#38312d;background:#faf7ef}*{box-sizing:border-box}body{margin:0}main{max-width:920px;margin:0 auto;padding:48px 24px}header{display:flex;justify-content:space-between;gap:12px;color:#776c64;font-size:14px}.brand{font-weight:800;color:#5f7154}h1{font-size:clamp(28px,5vw,44px);margin:52px 0 10px;letter-spacing:.03em}p{line-height:1.8}.muted{color:#786f66}.cards{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:30px 0 20px}button{font:inherit;cursor:pointer;border:1px solid #ddd5c8;border-radius:12px;background:white;color:inherit;padding:12px 20px}button:hover{border-color:#7d916b;background:#f2f6ed}button:focus-visible{outline:3px solid #8aa26f;outline-offset:4px}button:disabled{opacity:.4;cursor:default}.card{min-height:210px;padding:32px 16px;box-shadow:0 8px 25px #42311007;text-align:center}.reading{display:block;font-size:clamp(18px,3vw,26px);font-weight:750;overflow-wrap:anywhere}.romaji{display:block;margin-top:14px;font-size:14px;color:#87786d;overflow-wrap:anywhere}.key{display:block;margin-top:28px;color:#9d9387;font-size:12px}.controls{display:flex;justify-content:space-between;gap:16px}.controls button{background:transparent}.progress{height:5px;background:#e9e3d7;border-radius:10px;margin-top:20px}.progress span{display:block;background:#82966c;height:100%;border-radius:10px;transition:width .2s}footer{margin-top:40px;font-size:13px;color:#887d72}#error{color:#8e352a;background:#fff0e8;padding:14px;border-radius:8px}#error:empty{display:none}#results{margin-top:28px}li{margin:10px 0;line-height:1.6}small{line-height:1.7}.summary{background:white;padding:20px;border-radius:12px;border:1px solid #e8e0d4}#continue{background:#637b52;color:white;border:0;margin:20px 0}details{margin-top:20px}summary{cursor:pointer}[hidden]{display:none!important}@media(max-width:580px){main{padding:24px 16px}h1{margin-top:36px}.cards{gap:10px}.card{padding:24px 10px;min-height:190px}.key{display:none}.reading{font-size:20px}header{font-size:12px}}
+</style>
+<main>
+<header><span class="brand">mochitako</span><span id="saved" role="status">読み込み中…</span></header>
+<div id="error" role="alert"></div>
+<section id="question" hidden>
+<h1>どっちが好き？</h1><p class="muted" id="hint">直感でひとつ。差を感じなければ「同じくらい」。</p>
+<div class="progress"><span id="bar"></span></div><p id="counter" class="muted" aria-live="polite"></p>
+<div class="cards"><button class="card" id="left"><span class="reading" id="left-reading"></span><span class="romaji" id="left-romaji"></span><span class="key">← 左を選ぶ</span></button><button class="card" id="right"><span class="reading" id="right-reading"></span><span class="romaji" id="right-romaji"></span><span class="key">右を選ぶ →</span></button></div>
+<div class="controls"><button id="back">ひとつ戻る</button><button id="tie">同じくらい ↓</button><button id="skip">判断を見送る</button></div>
+</section>
+<section id="pause" hidden><h1>10問、おつかれさま。</h1><p id="pause-count" class="muted"></p><p>ここで閉じても大丈夫。回答は保存されています。</p><button id="resume">次の10問へ</button> <button id="pause-back">戻って訂正</button></section>
+<section id="done" hidden><h1 id="done-title">10問、おつかれさま。</h1><p class="muted">ここで終わって大丈夫。回答は保存されています。</p><div id="results" class="summary"></div><button id="continue">もう10問</button> <button id="correct">戻って訂正</button></section>
+<footer>途中で閉じても、このページで続きから。<br>← / → で選択、↓ で「同じくらい」。点数や理由の入力はありません。
+<details><summary>保存・評価について</summary><p><span id="storage-info">回答の保存先を確認しています。</span>「同じくらい」は好みに差がない回答、「判断を見送る」は未判定として別に集計します。比較は相対的な好みで、「使いたい名前の割合」はまだ測っていません。</p><button id="export">回答のバックアップ</button> <label>以前の回答を取り込む <input id="import" type="file" accept=".json"></label></details></footer>
+</main>
+<script>
+/* ENGINE */
+/* PAYLOAD */
+const engine = createPairwiseEngine(data.words, data.corpusHash, data.seed);
+const storageKey = 'mochitako:pairwise:v2:' + data.corpusHash + ':' + data.seed;
+const byValue = new Map(data.words.map(w => [w.value, w.reading]));
+const get = id => document.getElementById(id);
+let state;
+let lastAction = 0;
+let revision = 0;
+let busy = false;
+let resumedAt = -1;
+function atPause() { return !!state?.review && state.cursor > 0 && state.cursor < state.questions.length && state.cursor % 10 === 0 && resumedAt !== state.cursor; }
+const hosted = typeof data.token === "string";
+function readable(name) { return name.split('-').map(value => byValue.get(value)).join('・'); }
+function lock(value) {
+  busy = value;
+  for (const id of ['left','right','tie','skip','back','continue','correct','import','resume','pause-back']) get(id).disabled = value;
+  if (!value) get('back').disabled = !state || state.cursor === 0;
+}
+async function request(method, body) {
+  const response = await fetch('/api/state', { method, headers: {'Content-Type':'application/json','X-Mochitako-Token':data.token}, body: body === undefined ? undefined : JSON.stringify(body) });
+  const result = await response.json();
+  if (!response.ok) throw Error(result.error || '保存先に接続できません。');
+  return result;
+}
+async function save(next) {
+  if (busy) return;
+  lock(true);
+  get('saved').textContent = '保存中…';
+  try {
+    let backupFailed = false;
+    if (hosted) {
+      const result = await request('POST', {revision, state:next});
+      revision = result.revision;
+      try { localStorage.setItem(storageKey, JSON.stringify(next)); } catch { backupFailed = true; }
+    } else localStorage.setItem(storageKey, JSON.stringify(next));
+    state = next;
+    get('saved').textContent = hosted ? 'ファイルに保存済み' : 'ブラウザに保存済み';
+    get('error').textContent = backupFailed ? 'ファイル保存は完了しました。ブラウザ内の予備保存は利用できません。' : '';
+    render();
+  } catch (error) {
+    get('saved').textContent = '未保存';
+    get('error').textContent = '回答は進めていません。' + error.message;
+  } finally { lock(false); }
+}
+function text(tag, content) { const node = document.createElement(tag); node.textContent = content; return node; }
+function render() {
+  const q = state.questions[state.cursor];
+  const paused = atPause();
+  get('pause').hidden = !paused;
+  if (paused) {
+    get('question').hidden = true; get('done').hidden = true;
+    get('pause-count').textContent = state.cursor + ' / ' + state.questions.length + '問まで保存済み';
+    return;
+  }
+  get('question').hidden = !q;
+  get('done').hidden = !!q;
+  get('back').disabled = state.cursor === 0;
+  get('continue').hidden = !!state.review;
+  get('done-title').textContent = state.review ? state.questions.length + '問、完了です。' : '10問、おつかれさま。';
+  if (q) {
+    get('counter').textContent = state.review ? state.review.title + ' · ' + (state.cursor + 1) + ' / ' + state.questions.length + (state.questions.length > 10 ? '（' + (Math.floor(state.cursor / 10) + 1) + 'セット目）' : '') : (Math.floor(state.cursor / 10) + 1) + 'セット目 · ' + (state.cursor % 10 + 1) + ' / 10';
+    get('bar').style.width = (state.review ? state.cursor / state.questions.length * 100 : (state.cursor % 10) * 10) + '%';
+    get('hint').textContent = q.mode === 'whole' ? '名前全体で、好きなほうを。' : '直感でひとつ。差を感じなければ「同じくらい」。';
+    for (const [id, side] of [['left','a'],['right','b']]) {
+      get(id + '-reading').textContent = readable(q[side]);
+      get(id + '-romaji').textContent = q[side];
+      get(id).setAttribute('aria-label', readable(q[side]) + 'を選ぶ');
+    }
+  } else {
+    const s = engine.stats(state);
+    const root = get('results'); root.replaceChildren();
+    root.append(text('p', '左右の選択 ' + s.answered + '件 · 同じくらい ' + s.ties + '件 · 判断を見送り ' + s.skipped + '件'));
+    root.append(text('p', '比較した名前 ' + s.names + ' / ' + s.totalNames + '通り · 登場した語 ' + s.words + ' / ' + s.wordsTotal + '語（スキップを除く）'));
+    const latest = state.questions.slice(-10).filter(q => q.answer === 'a' || q.answer === 'b');
+    root.append(text('strong', '最後の10問で選んだ名前'));
+    const list = text('ul', '');
+    for (const q of latest) list.append(text('li', readable(q[q.answer]) + ' (' + q[q.answer] + ')'));
+    root.append(list);
+    const repeated = s.wordStats.filter(w => w.total >= 3).sort((a,b) => b.wins / b.total - a.wins / a.total).slice(0,5);
+    if (repeated.length) {
+      root.append(text('strong', '片側を揃えた比較での記録'));
+      for (const w of repeated) root.append(text('p', byValue.get(w.value) + '：' + w.total + '比較中 ' + w.wins + '回選択（' + (w.role === 'prefix' ? '前半' : '後半') + '）'));
+    }
+    root.append(text('small', 'まだ好みを探っている途中です。比較相手で結果は変わるため、単語全体の優劣や相性は未確定です。'));
+  }
+}
+function choose(choice) {
+  const now = Date.now();
+  if (busy || !state || atPause() || !state.questions[state.cursor] || now - lastAction < 250) return;
+  lastAction = now;
+  save(engine.answer(state, choice));
+}
+get('left').onclick = () => choose('a'); get('right').onclick = () => choose('b'); get('skip').onclick = () => choose('skip'); get('tie').onclick = () => choose('tie');
+get('resume').onclick = () => { if (!busy && state) { resumedAt = state.cursor; render(); } };
+get('back').onclick = get('correct').onclick = get('pause-back').onclick = () => { if (!busy && state) save(engine.back(state)); };
+get('continue').onclick = () => { if (busy || !state) return; try { save(engine.addRound(state)); } catch(error) { get('error').textContent = error.message; } };
+document.addEventListener('keydown', event => {
+  if (event.repeat || event.altKey || event.metaKey || event.ctrlKey || !state || !state.questions[state.cursor]) return;
+  const choice = {ArrowLeft:'a', ArrowRight:'b', ArrowDown:'tie'}[event.key];
+  if (choice) { event.preventDefault(); choose(choice); }
+});
+get('export').onclick = () => {
+  if (!state) return;
+  const url = URL.createObjectURL(new Blob([JSON.stringify(state,null,2)], {type:'application/json'}));
+  const a = document.createElement('a'); a.href = url; a.download = 'mochitako-comparisons.json'; a.click(); setTimeout(() => URL.revokeObjectURL(url),1000);
+};
+window.addEventListener('storage', event => {
+  if (hosted || busy || event.key !== storageKey || !event.newValue) return;
+  try { state = engine.validate(JSON.parse(event.newValue)); render(); get('saved').textContent = '別のタブの回答を反映'; }
+  catch(error) { get('error').textContent = error.message; }
+});
+get('import').onchange = async event => {
+  const file = event.target.files[0];
+  if (!file || busy) return;
+  try {
+    const imported = JSON.parse(await file.text());
+    const next = engine.validate(imported.state ?? imported);
+    if (state && state.questions.some(q => q.answer !== null) && !confirm('現在の回答を取り込むデータに置き換えますか？ サーバー保存済みの履歴は残ります。')) return;
+    await save(next);
+  } catch(error) { get('error').textContent = error.message; }
+  finally { event.target.value = ''; }
+};
+async function start() {
+  lock(true);
+  get('storage-info').textContent = hosted ? '回答はプロジェクト内のファイルに自動保存します。ブラウザ内にも予備を保存します。' : '回答はこのブラウザに保存します。ファイルへの自動保存は pnpm eval:serve で起動した画面をご利用ください。';
+  try {
+    if (hosted) {
+      const saved = await request('GET');
+      revision = saved.revision;
+      if (saved.state) {
+        state = engine.validate(saved.state); render(); get('saved').textContent = 'ファイルから再開 · 保存済み';
+      } else {
+        let backup = null;
+        try { const raw = localStorage.getItem(storageKey); if (raw) backup = engine.validate(JSON.parse(raw)); } catch {}
+        lock(false); await save(backup ?? engine.addRound(engine.empty()));
+      }
+    } else {
+      const saved = localStorage.getItem(storageKey);
+      if (saved) { state = engine.validate(JSON.parse(saved)); render(); get('saved').textContent = '続きから再開 · 保存済み'; }
+      else { lock(false); await save(engine.addRound(engine.empty())); }
+    }
+  } catch(error) { get('question').hidden = true; get('error').textContent = '読み込めませんでした。再読み込みしてください。既存データは変更していません。' + error.message; }
+  finally { lock(false); }
+}
+start();
+</script>
+</html>
