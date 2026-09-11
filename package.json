@@ -1,0 +1,47 @@
+{
+  "name": "mochitako",
+  "version": "0.1.0",
+  "description": "Cute random slug generator — Docker-style names, but mochi.",
+  "type": "module",
+  "bin": {
+    "mochitako": "./dist/cli.mjs"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.mts",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "tsdown",
+    "cli": "node src/cli.ts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "lint": "biome check .",
+    "fmt": "biome check --write .",
+    "prepublishOnly": "pnpm build"
+  },
+  "keywords": [
+    "slug",
+    "name-generator",
+    "random",
+    "cli"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "citty": "^0.2.2"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.5.12",
+    "@types/node": "^22.20.2",
+    "tsdown": "^0.23.0",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.0"
+  }
+}
