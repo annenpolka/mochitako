@@ -67,15 +67,17 @@ Raw JSON (any language, via the npm tarball):
 import corpus from "mochitako/words.json" with { type: "json" };
 ```
 
-CLI:
+CLI — run it without installing:
 
 ```
-mochitako                    # one random slug
-mochitako -n 5               # five slugs
-mochitako --vibe sleepy      # only sleepy-mood words
-mochitako --chaos 0.5        # each word may ignore the vibe filter 50% of the time
-mochitako --seed tako        # deterministic output
+npx mochitako                # one random slug
+npx mochitako -n 5           # five slugs
+npx mochitako --vibe sleepy  # only sleepy-mood words
+npx mochitako --chaos 0.5    # each word may ignore the vibe filter 50% of the time
+npx mochitako --seed tako    # deterministic output
 ```
+
+Install globally (`npm i -g mochitako`) to drop the `npx` prefix.
 
 ## How the generator works
 
